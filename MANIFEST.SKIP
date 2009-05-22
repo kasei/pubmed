@@ -1,0 +1,8 @@
+svn
+MANIFEST[.]SKIP
+Makefile$
+pm_to_blib
+blib
+inc/.author
+[.]DS_Store
+
