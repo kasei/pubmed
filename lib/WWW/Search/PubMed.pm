@@ -73,7 +73,6 @@ sub _get_some_article_ids {
 	my $self		= shift;
 	my $ua			= $self->user_agent();
 	my $url			= QUERY_ARTICLE_LIST_URI . '&retstart=' . $self->{'_retstart'} . '&term=' . $self->{'_term'};
-	warn '************* ' . $url;
 	my $response	= $ua->get( $url );
 	my $success		= $response->is_success;
 	if ($success) {
